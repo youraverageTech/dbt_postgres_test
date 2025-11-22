@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: dbt_test
+    description: "Raw data from dbt_test PostgreSQL database."
+    database: dbt_test
+    schema: public
+    tables:
+      - name: films
+        description: "List of films."
+      - name: actors
+        description: "List of actors."
+      - name: film_actors
+        description: "Mapping between films and actors."
